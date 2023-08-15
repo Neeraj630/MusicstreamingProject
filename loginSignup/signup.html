@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Signup Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="JavaScript/javascript.js"></script>
+</head>
+<style>
+    body{
+        background-color: lawngreen;
+    }
+</style>
+
+<body>
+    <section class="Sign_up">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class=" bg-success text-white" style="border-radius: 1rem;">
+                        <div class="p-5">
+                            <div class="mb-5 mt-4 pb-5">
+
+                                <h2 class="fw-bold mb-2 text-uppercase">Signup</h2>
+
+                                <form name="mysignupform" onsubmit="return signupvalidate()">
+
+                                    <input type="text" placeholder="enter your name" id="typename"
+                                        class="form-control form-control-lg">
+                                    <label class="mb-4" for="typename">Name</label>
+
+                                    <input type="email" placeholder="enter your email" id="typeEmailX"
+                                        class="form-control form-control-lg">
+                                    <label class="mb-4" for="typeEmailX">Email</label>
+
+                                    <input type="password" placeholder="enter your password" id="typePasswordX"
+                                        class="form-control form-control-lg">
+                                    <label class="form-label mb-4" for="typePasswordX">Password</label>
+
+                                    <input type="password" placeholder="re-password" id="typere-password"
+                                        class="form-control form-control-lg" name="repass">
+                                    <label class="form-label mb-4" for="typere-password">Re-Password</label>
+
+                                    <input type="tel" placeholder="enter your mob no." id="typemob"
+                                        class="form-control form-control-lg">
+                                    <label class="form-label mb-4" for="typemob">Mobile</label>
+
+                                    <button class="btn btn-outline-light btn-lg px-5 mx-auto d-block"
+                                            type="button">Sign up</button>
+                                    <p class="text-center my-4 fs- line ">Have an account?</p>
+                                    <a href="login.html" target="_blank" class="text-decoration-none">
+                                    <button class="btn btn-outline-light btn-lg px-5 mx-auto d-block"
+                                        type="">Login</button></a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

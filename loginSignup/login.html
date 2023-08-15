@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Login Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="JavaScript/javascript.js"></script>
+    <style>
+        body{
+            background-color:lawngreen;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="login_form">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class=" bg-success text-white" style="border-radius: 1rem;">
+                        <div class="p-5">
+                            <div class="mb-5 mt-4 pb-5">
+                                <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                                <p class="text-white-50 mb-5">Please enter your login and password!</p>
+
+                                <form name="myform" onsubmit="return validateform()">
+
+                                    <input type="email" placeholder="enter your email" id="typeEmailX"
+                                        class="form-control form-control-lg" name="femail">
+                                    <label class="mb-4" for="typeEmailX">Email</label>
+                                    <input type="password" placeholder="enter your password" id="typePasswordX"
+                                        class="form-control form-control-lg" name="fpass">
+                                    <label class="form-label mb-4" for="typePasswordX">Password</label>
+                                    <a href="login.html" target="_blank" class="text-decoration-none"><button
+                                            class="btn btn-outline-light btn-lg px-5 mx-auto d-block"
+                                            type="submit">Login</button></a>
+                                    <p class="text-center my-4 fs-4 line text-decoration-underline">New user</p>
+                                </form>
+                                <form>
+                                    <a href="signup.html" class="text-decoration-none"><button
+                                            class="btn btn-outline-light btn-lg px-5 mx-auto d-block">Signup</button></a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>
